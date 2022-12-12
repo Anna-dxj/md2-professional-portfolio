@@ -1,0 +1,91 @@
+:root {
+/*Color palate*/
+    --background:#475250;
+    --light:#d1d1d1;
+    --lilac:#be61e0;
+    --coral:#FF7077;
+    --cyan:#a6e1d8;
+}
+
+*{
+    background-color: var(--background);
+    color: white;
+}
+/*All header elements*/
+h1, h1 + p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+}
+
+h1 {
+    padding-top: 2%;
+}
+
+h1 + p {
+    padding-bottom: 2%;
+}
+
+/*All nav elements*/
+nav {
+    padding: 3px 1%;
+    display: sticky;
+}
+
+nav ul {
+    border-radius: 20px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+nav li {
+    padding: 1%;
+    background-color: var(--light);
+}
+
+nav a, nav li{
+    background-color: var(--light);
+    color: black;
+}
+/*Affects article #about-me elements*/
+#about-me{
+    padding: 3px 1px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#about-me img {
+    padding: 3px 1px;
+    border-radius: 30px;
+}
+
+#about-me section {
+    background-color: var(--coral);
+    padding: 3px 0px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me h2, #about-me p {
+    background-color: var(--coral); 
+    color: white;
+    padding: 0 2%;
+    margin: 0 1%;
+}
+
+#my-work h2 {
+    background-color: var(--lilac);
+    color: white;
+    padding: 1% 1%;
+    margin: 3px 1%;
+    border-radius: 15px;
+}
+/*Add :hover to nav & works that it pops out a little?*/
+
+/*Hide description text until hover over photo*/

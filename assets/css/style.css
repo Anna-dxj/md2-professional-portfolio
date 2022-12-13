@@ -79,13 +79,63 @@ nav a, nav li{
     margin: 0 1%;
 }
 
-#my-work h2 {
+h2{
     background-color: var(--lilac);
     color: white;
-    padding: 1% 1%;
+    padding: 1%;
     margin: 3px 1%;
     border-radius: 15px;
 }
-/*Add :hover to nav & works that it pops out a little?*/
 
-/*Hide description text until hover over photo*/
+#first-project {
+    display: flex;
+    position: relative;
+}
+#first-description {
+    display: none;
+    transition: all 0.5ms ease-in;
+}
+
+#first-description h3, #first-description p {
+    padding: 4% 0;
+    background: var(--light);
+    color: var(--light);
+    transition: color 0.5ms ease-out;
+}
+#first-description p {
+    font-size: 12px;
+}
+#first-description a {
+    display: block;
+    background-color: var(--light);
+    color: var(--light);
+    transition: color 0.5ms ease-out;
+}
+#first-project img {
+    display: flex;
+    position: relative;
+    margin: 1% auto;
+    width: 98%;
+    height:fit-content;
+    border-radius: 50px;
+}
+
+#first-project:hover #first-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    background: var(--light);
+    padding: 100px 10px;
+    margin: 1% -150px 1% 1%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    z-index: 1;
+}
+#first-project:hover a, #first-project:hover p {
+    color: var(--lilac);
+}/*add shadow? and also transition need help with transition*/
+
+#first-project:hover img {
+    margin-right: 1%;
+}

@@ -24,7 +24,7 @@ h1 {
 }
 
 h1 + p {
-    padding-bottom: 2%;
+    padding-bottom: 0;
 }
 
 /*All nav elements*/
@@ -54,7 +54,7 @@ nav a, nav li{
 #about-me{
     padding: 3px 1px;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #about-me img {
@@ -66,6 +66,7 @@ nav a, nav li{
 #about-me section {
     margin: 0 1% 0 0.5%;
     background-color: var(--coral);
+    width:100%;
     padding: 3px 0px;
     border-radius: 30px;
     display: flex;
@@ -81,6 +82,7 @@ nav a, nav li{
     margin: 0 1%;
 }
 
+/*My Work section*/
 h2{
     background-color: var(--lilac);
     color: white;
@@ -88,7 +90,7 @@ h2{
     margin: 3px 1%;
     border-radius: 15px;
 }
-
+/*css Snippet and description*/
 #first-project {
     display: inline;
     position: relative;
@@ -104,9 +106,6 @@ h2{
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.6);
-/*    transition-property: transform, opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;*/
   }
 #first-project img {
     display: flex;
@@ -129,7 +128,6 @@ h2{
 #first-description p {
     padding: 1% 1% 2% 6%;
     opacity: 30%;
-    font-size: 12px;
     background: var(--light);
     color: var(--lilac);
     width: 70%;
@@ -142,7 +140,8 @@ h2{
     opacity: 100%;
     color: black;
 }
-
+/*For projects after first project
+Not inserted in HTML yet*/
 #following-projects {
     display: flex;
     margin: 1%;
@@ -177,7 +176,6 @@ h2{
     padding: 1% 1% 2% 7%;
     margin: 1% 5%;
     opacity: 30%;
-    font-size: 12px;
     transition-duration: 750ms;
     transition-timing-function: ease-in-out;
 }
@@ -186,6 +184,17 @@ h2{
     color: black;
 }
 
+/*Contact Me info */
+aside {
+    background-color: var(--cyan);
+    margin: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 aside h3 {
     margin: 1% 1% 0 1%;
     padding: 1%;
@@ -197,22 +206,24 @@ aside h3 {
 aside ul {
     display: flex;
     justify-content: center;
-    background-color: var(--light);
+    background-color: var(--cyan);
     margin: 1%;
 }
 
-aside li {;
-    background-color: var(--light);
+aside li {
+    background-color: var(--cyan);
     color: black;
+    width: ;
     margin: 1%; 
-    font-size: 13px;
+    width: max-content;
 }
 
 aside a {
-    background-color: var(--light);
+    background-color: var(--cyan);
     color: black;
 }
 
+/*Footer*/ 
 footer {
     display:flex;
     justify-content: center;
@@ -221,13 +232,75 @@ footer {
 
 h4 {
     color: var(--cyan);
-    font-size: 14px;
     padding-bottom: 1%;
 }
-
+/*Tablet-size*/
 @media screen and (max-width:992px){
-    
+    h1, h2, h3, a, p, ul, li{
+        color: blue;
+    }  
+    nav ul {
+        border-radius: 15px;
+    }   
+    #my-work h2 {
+        border-radius: 12px;
+    }
 }
-/*@media screen and (max-width:768px){
+/*Phone-size*/
+@media screen and (max-width: 768px){
+    h1, h2, h3, a, p, ul, li{
+        color: orange;
+    }
+    nav ul {
+        border-radius: 11px;
+    }
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+    }
+    #about-me img {
+        width: 40%;
+    }
+    #about-me section {
+        height:fit-content;
+        margin: 1%;
+        padding: 6px;
+        border-radius: 12px;
+    }
+    #about-me section p {
+        margin: 2%;
+    }
+    #my-work h2 {
+        border-radius: 10px;
+    }
+
+    #first-project img, 
+    .project-individual img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }    
     
+    #following-projects {
+        display: block;
+    }
+    #following-project img {
+        width: 100%;
+    }
+
+    #first-description, 
+    .following-description {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-bottom: 1%;
+    }
+    
+    #first-description p, 
+    .following-description p {
+        opacity: 100%;
+        color: black;
+    }
+
 }

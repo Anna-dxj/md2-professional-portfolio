@@ -235,10 +235,7 @@ h4 {
     padding-bottom: 1%;
 }
 /*Tablet-size*/
-@media screen and (max-width:992px){
-    h1, h2, h3, a, p, ul, li{
-        color: blue;
-    }  
+@media screen and (max-width:992px){ 
     nav ul {
         border-radius: 15px;
     }   
@@ -248,9 +245,6 @@ h4 {
 }
 /*Phone-size*/
 @media screen and (max-width: 768px){
-    h1, h2, h3, a, p, ul, li{
-        color: orange;
-    }
     nav ul {
         border-radius: 11px;
     }

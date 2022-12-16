@@ -236,18 +236,22 @@ h4 {
 }
 /*Tablet-size*/
 @media screen and (max-width:992px){ 
+    /*Affects navigation*/
     nav ul {
         border-radius: 15px;
     }   
+    /*affects my work header*/
     #my-work h2 {
         border-radius: 12px;
     }
 }
 /*Phone-size*/
 @media screen and (max-width: 768px){
+    /*affects navigattion*/
     nav ul {
         border-radius: 11px;
     }
+    /*Affets about me section (stacks)*/
     #about-me {
         display: flex;
         flex-direction: column-reverse;
@@ -267,6 +271,7 @@ h4 {
     #about-me section p {
         margin: 2%;
     }
+    /*affects my work section*/ 
     #my-work h2 {
         border-radius: 10px;
     }
@@ -276,7 +281,7 @@ h4 {
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }    
-    
+    /*affects following-projects (not added yet) but will stack*/
     #following-projects {
         display: block;
     }

@@ -91,55 +91,6 @@ h2{
     border-radius: 15px;
 }
 /*css Snippet and description*/
-#first-project {
-    display: inline;
-    position: relative;
-}
-#first-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--light);
-    width: 98%;
-    padding-top: 1%;
-    margin: 0 1%;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.6);
-  }
-#first-project img {
-    display: flex;
-    position: relative;
-    margin: 1% 1% 0 1%;
-    width: 98%;
-    height:fit-content;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-
-#first-description h3, 
-#first-description a {
-    padding: 0% 0% 0% 3%;
-    opacity: 100%;
-    margin: 1%;
-    background: var(--light);
-    color: var(--lilac);
-}
-#first-description p {
-    padding: 1% 1% 2% 6%;
-    opacity: 30%;
-    background: var(--light);
-    color: var(--lilac);
-    width: 70%;
-    margin: 1% 5%;
-    transition-duration: 750ms;
-    transition-timing-function: ease-in-out;
-}
-
-#first-project:hover #first-description p{
-    opacity: 100%;
-    color: black;
-}
 /*For projects after first project
 Not inserted in HTML yet*/
 #following-projects {
@@ -179,7 +130,7 @@ Not inserted in HTML yet*/
     transition-duration: 750ms;
     transition-timing-function: ease-in-out;
 }
-.project-individual:hover p{
+.custom-card:hover p{
     opacity: 100%;
     color: black;
 }

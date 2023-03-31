@@ -114,11 +114,16 @@ Not inserted in HTML yet*/
 }
 
 .following-description h3, 
-.following-description a {
+.deployed-link {
     background: var(--light);
     color: var(--lilac);
     padding: 2% 2% 0% 6%;
     margin: 1%;
+}
+
+.repo-link {
+    background: var(--light);
+    color: var(--lilac);
 }
 
 .following-description p {
